@@ -17,7 +17,7 @@ public class network6_2 {
 // 请在本行之后添加你的代码内容
 class Student {
     private String studentID;
-    private String clssID;
+    private String classID;
     private String name;
     private String sex;
     private int age;
@@ -27,9 +27,9 @@ class Student {
         return count;
     }
 
-    public Student(String studentID, String clssID, String name, String sex, int age) {
+    Student(String studentID, String classID, String name, String sex, int age) {
         this.studentID = studentID;
-        this.clssID = clssID;
+        this.classID = classID;
         this.name = name;
         this.sex = sex;
         this.age = age;
@@ -38,7 +38,7 @@ class Student {
 
     @Override
     public String toString() {
-        return String.format( "学号：%s\t班号：%s\t姓名：%s\t性别：%s\t年龄：%d",studentID,clssID,name,sex,age );
+        return String.format( "学号：%s\t班号：%s\t姓名：%s\t性别：%s\t年龄：%d",studentID,classID,name,sex,age );
     }
 
     public String getName() {
@@ -55,9 +55,5 @@ class Student {
 
     public void setAge(int age) {
         this.age = age;
-    }
-
-    public static void setCount(int count) {
-        Student.count = count;
     }
 }
