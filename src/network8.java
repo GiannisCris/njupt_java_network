@@ -1,6 +1,6 @@
 abstract class Pet{
     private String name;
-    public Pet(String name){
+    Pet(String name){
         this.name = name;
     }
 
@@ -14,7 +14,7 @@ abstract class Pet{
     abstract String shout();
 }
 class Dog extends Pet{
-    public Dog(String name){
+    Dog(String name){
         super(name);
     }
 
@@ -27,7 +27,7 @@ class Dog extends Pet{
     }
 }
 class Cat extends Pet{
-    public Cat(String name){
+    Cat(String name){
         super(name);
     }
 
