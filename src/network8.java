@@ -13,6 +13,7 @@ abstract class Pet{
     }
     abstract String shout();
 }
+
 class Dog extends Pet{
     Dog(String name){
         super(name);
@@ -26,6 +27,7 @@ class Dog extends Pet{
         return "Wang Wang Wang";
     }
 }
+
 class Cat extends Pet{
     Cat(String name){
         super(name);
